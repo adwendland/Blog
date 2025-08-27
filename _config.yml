@@ -30,7 +30,7 @@ url: "https://adwendland.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: Minima
 plugins:
   - jekyll-feed
 
