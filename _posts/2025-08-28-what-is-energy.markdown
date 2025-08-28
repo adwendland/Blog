@@ -1,13 +1,14 @@
 ---
 layout: post
 title:  "What is meant by \"energy\" in the calculus of variations"
-date:   2025-08-27 16:08:50 -0400
+date:   2025-08-28 16:08:50 -0400
+tags: Calculus of variations, lagrangian mechanics
 ---
 
 # Introduction
-Hi, and thanks for taking a look at the first post in my blog! I had originally started this blog with the intention of writing about gradient descent methods in the calculus of variations, but quickly after starting to write something up I realized I wanted something more tangible looking back on as my first blog post.
+Hi, and thanks for taking a look at the first post in my blog! I had originally started this blog with the intention of writing about gradient descent methods in the calculus of variations, but I ultimately decided that I would like to start my blog somewhere more accessible.
 
-What follows here is an answer to a simple question I was too afraid to ask when I started work in this field.
+What follows here is an answer to a simple question I was too afraid to ask when I started work in this field, along with some of the connections I've made between research-level problems in the calculus of variations and physical concepts which are (hopefully) easily understandable to a general audience. A fair disclaimer that what follows is mostly based on my own personal understanding of the physical and mechanical processes described below, and I'm by no means an expert in physics or mechanics.
 
 
 # What do we mean by \"energy\"?
@@ -51,7 +52,7 @@ L(t,u(t),Du(t)) \tag{2}
 $$
 
 where 
-$L\in C^2(\Omega\times \mathbb{R}\times \mathbb{R}^n;\R)$. Then we may define the *action* of the system between time $t_1$ and $t_2$ as the definite integral of the Lagrangian over the interval $[t_1,t_2]$: 
+$L\in C^2(\Omega\times \mathbb{R}\times \mathbb{R}^n;\mathbb{R})$. Then we may define the *action* of the system between time $t_1$ and $t_2$ as the definite integral of the Lagrangian over the interval $[t_1,t_2]$: 
 
 $$
 \mathcal{S}(u)= \int_{t_1}^{t_2} L(t,u(t),Du(t))~d{t}. \tag{3}
