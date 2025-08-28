@@ -2,7 +2,6 @@
 layout: post
 title:  "What is meant by \"energy\" in the calculus of variations"
 date:   2025-08-28 16:08:50 -0400
-tags: Calculus of variations, lagrangian mechanics
 ---
 
 # Introduction
