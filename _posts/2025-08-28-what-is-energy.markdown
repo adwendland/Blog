@@ -22,7 +22,7 @@ or
 $$
 \mathcal{E}(u)= \int_\Omega f(x,u,Du)~dx$$
 
-defined on some suitable function space (usually something like $L^2(\Omega)$ or $W^{1,2}(\Omega)$ and a smooth enough (usually Lipschitz) domain $\Omega\subset \R^n$. Either one of these functions above can be called the \"energy\" associated to the function $u$. By \"energy\", we do literally mean *energy*. In most high school physics classes, we learn about *potential energy* $PE$, the stored energy of an object, and *kinetic energy* $KE$, the energy of the object's motion. We then usually learn that the total mechanical energy ($ME$), is written as the sum of potential and kinetic energy: 
+defined on some suitable function space (usually something like $L^2(\Omega)$ or $W^{1,2}(\Omega)$) and a smooth enough (usually Lipschitz) domain $\Omega\subset \mathbb{R}^n$. Either one of these functions above can be called the \"energy\" associated to the function $u$. By \"energy\", we do literally mean *energy*. In most high school physics classes, we learn about *potential energy* $PE$, the stored energy of an object, and *kinetic energy* $KE$, the energy of the object's motion. We then usually learn that the total mechanical energy ($ME$), is written as the sum of potential and kinetic energy: 
 
 $$
 ME = PE + KE. \tag{1}
