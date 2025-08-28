@@ -82,9 +82,11 @@ $$
 $$
 
 On the other hand, Hooke's Law says that the force needed to extend or compress a spring is directly proportional to its displacement, so 
+
 $$
     F = -kx.\tag{6}
 $$
+
 Combining (5) and (6), we arrive at the familiar ordinary differential equation describing a simple harmonic oscillator: 
 
 $$
