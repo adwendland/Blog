@@ -1,8 +1,13 @@
 ---
 layout: post
 title:  "What is meant by \"energy\" in the calculus of variations"
-date:   2025-08-28 16:08:50 -0400
+date:   2025-08-28 10:30:44 -0400
+categories: [calculus of variations, Lagrangian mechanics]
 ---
+
+In this first blog post we establish precisely what we mean by \"energy\" in the calculus of variations. We also justify the use of the Lagrangian framework in mechanics and illustrate these concepts with an example featuring the familiar undamped mass-spring model.
+
+<!-- more -->
 
 # Introduction
 Hi, and thanks for taking a look at the first post in my blog! I had originally started this blog with the intention of writing about gradient descent methods in the calculus of variations, but I ultimately decided that I would like to start my blog somewhere more accessible.
