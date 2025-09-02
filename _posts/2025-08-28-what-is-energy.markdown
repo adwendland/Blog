@@ -49,22 +49,22 @@ This is also the notion of energy that is used in the calculus of variations.
 
 
 # Why the Lagrangian?
-The simple answer is so that all the machinery behind the calculus of variations works. Suppose that we can represent the Lagrangian of a system can written as 
+The simple answer is so that all the machinery behind the calculus of variations works. Let us consider the 1D case for simplicity, and suppose that the Lagrangian of some system can be written as
 
 $$
-L(t,u(t),Du(t)) \tag{2}
+L(t,u(t),u^\prime(t)) \tag{2}
 $$
 
 where 
-$L\in C^2(\Omega\times \mathbb{R}\times \mathbb{R}^n;\mathbb{R})$. Then we may define the *action* of the system between time $t_1$ and $t_2$ as the definite integral of the Lagrangian over the interval $[t_1,t_2]$: 
+$L\in C^2(\Omega\times \mathbb{R}\times \mathbb{R};\mathbb{R})$. Then we may define the *action* of the system between time $t_1$ and $t_2$ as the definite integral of the Lagrangian over the interval $[t_1,t_2]$: 
 
 $$
-\mathcal{S}(u)= \int_{t_1}^{t_2} L(t,u(t),Du(t))~d{t}. \tag{3}
+\mathcal{S}(u)= \int_{t_1}^{t_2} L(t,u(t),u^\prime(t))~d{t}. \tag{3}
 $$
 
-The action is commonly measured in units of joule-seconds ($J\cdot s$). Think about it as the total accumulation of all the energies $L(t,u(t),Du(t))$ throughout the interval $[t_1,t_2]$. 
+The action is commonly measured in units of joule-seconds ($J\cdot s$). Think about it as the total accumulation of all the energies $L(t,u(t),u^\prime(t))$ throughout the interval $[t_1,t_2]$. In other words, the Lagrangian $L$ measures the instantaneous energy at time $t$, and the action $\mathcal{S}$ measures the total expended energy between times $t_1$ and $t_2$. 
 
-Now the reason for this Lagrangian framework comes from another fundamental concept in physics: the *principle of least action*. Roughly, what this says is that physical systems will take the trajectory that will minimize their action. You might have heard somewhere that nature is lazy: what this means in this context is that whatever mechanical system we are dealing with, it wants to take the most efficient path between time $t=t_1$ and $t=t_2$.
+Now the reason for this Lagrangian framework comes from another fundamental concept in physics: the *principle of least action*. Roughly, what this says is that physical systems will take the trajectory that will minimize their action. You might have heard somewhere that nature is lazy: what this means in this context is that whatever mechanical system we are dealing with, it wants to take the most efficient path between time $t=t_1$ and $t=t_2$. This \"efficiency\" is, in turn, exactly what the action as defined in (3) measures.
 
 Think about it this way: you are on your drive home after a long day at work. You have a choice between two paths: one is a route with few turns where you are on the highway most of the time, and the other takes you 20 miles out of the way and takes you through various school zones, construction zones, etc., so you will be making quite a few speed changes as well. Of course, it's absurd to think of taking this second route, and it's exactly because you would waste a lot of energy needlessly by going this way. Nature thinks the same way in determining the behavior of mechanical systems. 
 
@@ -74,7 +74,7 @@ $$
 \inf_{u\in X} \mathcal{S}(u) = \inf_{u\in X}\int_{t_1}^{t_2} L(t,u(t),Du(t))~dt, \tag{4}
 $$
 
-where $X$ is some appropriate function space for the problem at hand. Again, remember here that for every $t$ in $[t_1,t_2]$, the Lagrangian $L(t,u(t),Du(t))$ just tells us the difference between the system's kinetic and potential energies at time $t$. As this system travels from time $t=t_1$ to $t=t_2$, remember that it wants to take the most efficient path, and this efficiency is measured by the action. When we integrate over $[t_1,t_2]$, we are adding up the contributions of the energies encoded by $L(t,u(t),Du(t))$ for all time $t$ in this interval, and it is this accumulated energy in bulk that we would like to minimize.
+where $X$ is some appropriate function space for the problem at hand. Again, remember here that for every $t$ in $[t_1,t_2]$, the Lagrangian $L(t,u(t),u^\prime(t))$ just tells us the difference between the system's kinetic and potential energies at time $t$. As this system travels from time $t=t_1$ to $t=t_2$, remember that it wants to take the most efficient path, and this efficiency is measured by the action. When we integrate over $[t_1,t_2]$, we are adding up the contributions of the energies encoded by $L(t,u(t),u^\prime(t))$ for all time $t$ in this interval, and it is this accumulated energy in bulk that we would like to minimize. 
 
 How so-called \"variational problems\" like (4) are analyzed depends heavily on the problem itself, and are the subject of future blog posts. Notice that in (4) \"inf\" is used and not \"min\"; in fact, for most interesting variational problems, establishing even the *existence* of a minimizer to a given energy functional (i.e., *action*) is a tricky matter. We only briefly illustrate some of the concepts above with the example below.
 
