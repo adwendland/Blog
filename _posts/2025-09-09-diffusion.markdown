@@ -14,7 +14,7 @@ We will consider diffusion as meaning the phenomenon of *material transport by a
 
 So now let us also recall that this diffusion process can be modeled in terms of the *concentration* of each of copper and nickel. When the ingots are first brought into contact with one another, the concentration is 100% copper and 100% nickel; you have two different bars of metal. However, as time passes, some atoms from the copper ingot migrate over to the nickel ingot, and some atoms from the nickel ingot pass into the copper ingot. At finite time, we still have pure copper on one side and pure nickel on the other, but now there will be a layer between the two with some copper and come nickel atoms. This can be modeled with a *concentration profile*, where the concentration of each material is placed on the y-axis and time on the x-axis: 
 
-![Copper-nickel diffusion couple concentration profile.](/assets/images/copper-nickel-diffusion.png)
+![Copper-nickel diffusion couple concentration profile.]({{ site.baseurl }}/assets/images/copper-nickel-diffusion.png)
 
 Again, this is a very simple introduction to the process of diffusion in materials science, and we note here that the actual physical processes involved here at the atomic level are in general more complex. We next present some of the mathematics used to model diffusion processes.
 
