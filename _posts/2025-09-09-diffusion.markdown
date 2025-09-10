@@ -98,7 +98,7 @@ You might recognize this as a 1D heat equation. This implies that heat transfer 
 
 
 
-# References
+### References
 1. William D. Callister, Jr. and David G. Rethwisch, *Materials science and engineering: An introduction*, 10th ed., Wiley, Hoboken, 2018.
 2. University of Auckland, [Conservation of mass.](https://pkel015.connect.amazon.auckland.ac.nz/SolidMechanicsBooks/Part_III/Chapter_3_Stress_Mass_Momentum/Stress_Balance_Principles_01_Conservation_of_Mass.pdf)
 3. Wikipedia, [Continuity/transport equation.](https://en.wikipedia.org/wiki/Continuity_equation)
