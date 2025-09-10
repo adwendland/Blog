@@ -102,5 +102,5 @@ You might recognize this as a 1D heat equation. This implies that heat transfer 
 1. William D. Callister, Jr. and David G. Rethwisch, *Materials science and engineering: An introduction*, 10th ed., Wiley, Hoboken, 2018.
 2. University of Auckland, [Conservation of mass.](https://pkel015.connect.amazon.auckland.ac.nz/SolidMechanicsBooks/Part_III/Chapter_3_Stress_Mass_Momentum/Stress_Balance_Principles_01_Conservation_of_Mass.pdf)
 3. Wikipedia, [Continuity/transport equation.](https://en.wikipedia.org/wiki/Continuity_equation)
-## Image
+# Image
 1. https://www.google.com/url?sa=i&url=http%3A%2F%2Fdiffusioninsolidsees.blogspot.com%2F2010%2F05%2Fdiffusion-phenomenon.html&psig=AOvVaw1EmBi8mLhMpdgVysUVN-Ed&ust=1757557826532000&source=images&cd=vfe&opi=89978449&ved=0CBkQjhxqFwoTCKjb4rSYzY8DFQAAAAAdAAAAABAE
