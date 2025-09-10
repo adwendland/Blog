@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Diffusion, Fick's laws, and the importance of conservation laws"
+title:  "Diffusion, Fick's laws, and the importance of conservation laws in non-steady state processes"
 date:   2025-09-10 10:06:44 -0400
 categories: [partial differential equations, conservation law, diffusion]
 ---
@@ -9,7 +9,7 @@ Here we derive Fick's first and second laws of diffusion, and illustrate the imp
 
 <!-- more -->
 
-# What is diffusion?
+### What is diffusion?
 We will consider diffusion as meaning the phenomenon of *material transport by atomic motion.* Diffusion really is a simple process to understand that goes back to something you probably heard in a high school physics or chemistry class: particles move from high concentrations to low(er) concentrations over time. Now there are many different kinds of diffusion depending on the material's phase (solid, liquid gas) and Fick's laws are applicable to each, but it will be easier for us to fix one example in our minds; to this end, let's think of a copper (Cu) - nickel (Ni) diffusion couple. This is an example of solid diffusion. Now solid diffusion will happen (albeit very slowly) at any temperature; but usually how this works is two bars or ingots are brought into contact with one another and heated for an extended period of time (but below the melting temperature of each) and cooled back to room temperature. Perhaps now is a good time to also recall that there is a positive relationship between temperature and diffusion; at higher temperatures, the vibrational energies of the atoms increase, and these atoms become capable of diffusion. The more atoms which are capable of diffusion, the more diffusion that happens.
 
 So now let us also recall that this diffusion process can be modeled in terms of the *concentration* of each of copper and nickel. When the ingots are first brought into contact with one another, the concentration is 100% copper and 100% nickel; you have two different bars of metal. However, as time passes, some atoms from the copper ingot migrate over to the nickel ingot, and some atoms from the nickel ingot pass into the copper ingot. At finite time, we still have pure copper on one side and pure nickel on the other, but now there will be a layer between the two with some copper and come nickel atoms. This can be modeled with a *concentration profile*, where the concentration of each material is placed on the y-axis and time on the x-axis: 
@@ -20,7 +20,7 @@ Again, this is a very simple introduction to the process of diffusion in materia
 
 
 
-# Fick's first law
+### Fick's first law
 We are now ready to present Fick's first law, the \"easier\" of the two laws to understand. Before we present the law, we first recall the idea of *flux.* By flux, we roughly mean movement through any given boundary or surface. In materials science, flux in the context of diffusion means the *rate of mass transfer.* The rate of mass transfer, or again, the flux, is defined as the mass (or the number of atoms) $M$ diffusing through and perpendicular to a unit cross-sectional area of solid per unit of time. This may sound technical, but just think of the number of copper atoms passing through the copper-nickel interface per second.
 
 Now of course the flux has a mathematical representation; we will denote it with $J$. We can write the flux as
@@ -52,10 +52,10 @@ $$
 For simplicity, we will consider only the ``1D" case here.
 
 
-# Fick's second law
+### Fick's second law
 We are now ready to discuss Fick's second law, which deals with non-steady state diffusion. This means that the diffusion flux and concentration gradient vary with time. This is the behavior which is expected for most cases of diffusion. For instance, think about releasing the pressure valve on a pressure cooker: upon release, you immediately hear a rush of pressurized air diffusing out of the pressure cooker, but then you hear this rate gradually taper off until the pressure inside the cooker is equal to the pressure outside. Here the rate of diffusion decreases with time.
 
-## Conservation laws in non-steady state processes
+# Conservation laws in non-steady state processes
 So how does the mathematical representation of non-steady state diffusion differ from (2.2) above? Since we are now in the case that the diffusion happens at a different rate depending on time, meaning that atoms/mass is flowing through the material at a different rate depending on how far along we are into the diffusive process, we need to think about a *conservation law*. The important quantity to conserve here is **mass**; we need to make sure that our equation describing non-steady state diffusion does not add or delete mass over time. Using the same notation as above, a conservation of mass law can be stated as follows: 
 
 $$
@@ -66,7 +66,7 @@ What (3.1) roughly says is this: for any fixed region within the material and an
 
 This derivation of (3.1) illustrates something actually really mathematically significant. Whenever we are dealing with a physical process (e.g., diffusion, chemical reaction, etc.) that changes in some way over time, we must think of quantities we need to conserve (e.g., mass, energy, electric charge). These will all require some sort of conservation law in our model for the physical process at hand. For example, in (3.1) the change in concentration with respect to time ($\partial_t \rho$) is exactly balanced out with the flow of mass out of the material ($-\frac{\mathrm{d}J}{\mathrm{d}x}$); this ensures that we are not \"creating\" or \"deleting\" mass as time varies.
 
-## Conservation law to Fick's second law
+# Conservation law to Fick's second law
 The question remains how to relate our conservation law (3.1) back to in terms of the concentration $\rho$. To this end, let us recall Fick's first law (2.2):
 
 $$
