@@ -85,13 +85,13 @@ $$
 Finally, inserting (3.2) into (3.1) gives Fick's second law: 
 
 $$
-    \partial_t J = -\frac{\mathrm{d}J}{\mathrm{d}x}= \partial_x\Big[D\cdot \frac{\mathrm{d}\rho}{\mathrm{d}x}\Big]. \tag{3.3}
+    \partial_t \rho = -\frac{\mathrm{d}J}{\mathrm{d}x}= \partial_x\Big[D\cdot \frac{\mathrm{d}\rho}{\mathrm{d}x}\Big]. \tag{3.3}
 $$
 
 We conclude with one final remark. The coefficient of diffusion $D$ in general depends on $x$. This means that the material has different diffusive properties at different locations within the material. This corresponds physically to an *anisotropic* material, one where we see a lot of variation in grain size and structure depending on where we're located within the material and which direction we look in. If our material has a high degree of isotropy, meaning that the size and structure of the material is roughly the same in all directions, then it makes sense that the properties (such as diffusivity) of the material will also roughly be the same in all directions, and we may assume that $\frac{\mathrm{d} D}{\mathrm{d} x} =0$. In this case, (3.3) becomes 
 
 $$
-    \partial_t J = D\cdot \frac{\mathrm{d}^2\rho}{\mathrm{d}x^2} \tag{3.4}.
+    \partial_t \rho = D\cdot \frac{\mathrm{d}^2\rho}{\mathrm{d}x^2} \tag{3.4}.
 $$
 
 You might recognize this as a 1D heat equation. This implies that heat transfer within a material behaves very similarly to diffusion, and in fact, we may think of heat transfer within a material as an example of diffusion (in the sense that higher temperature areas diffuse to lower temperature areas and vice versa) inasmuch as we are willing to accept that energy is equivalent to mass.
